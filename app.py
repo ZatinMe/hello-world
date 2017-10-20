@@ -45,9 +45,11 @@ def webhook():
     res = json.dumps(res, indent=4)
     print(res)
     r = make_response(res)
-    print(" \n 1. " + r)
+    print("testing1")
+    print(r)
     r.headers['Content-Type'] = 'application/json'
-    print(" \n 2. " + r)
+    print("testing2")
+    print(r)
     return r
 
 
